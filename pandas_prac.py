@@ -40,3 +40,11 @@ print(f"데이터프레임 인덱스: {df.index}")
 print(f"데이터프레임 값: {df.values}")
 # 시리즈에선 단순히 인덱스가 값에 매핑됐다면
 # 데이터프레임에서는 인덱스가 값에 매핑되는 것 + 값들이 또 각각 열에 의해서도 매핑되는 셈 -> 흡사 엑셀 스프레드시트 같은
+
+"""
+csv 파일, sql.. 기타 등등도 읽기 가능
+"""
+df_csv = pd.read_csv("/Users/kimdongjun/Desktop/example.csv")
+print(df_csv) # csv 내의 id 말고 데이터프레임 자체 인덱스 부여 가
+
+print(df_csv.index)
